@@ -1,0 +1,13 @@
+<p>register works!</p>
+<h2>Shopping</h2>
+
+<ol>
+    <li *ngFor = "let item  of data">
+        {{item.Category}}
+        <ol type="a">
+            <li *ngFor = "let Product of item.Product">
+                {{Product}}
+           </li>
+        </ol>
+    </li>
+</ol>

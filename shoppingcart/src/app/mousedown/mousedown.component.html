@@ -1,0 +1,9 @@
+<p>mousedown works!</p>
+<div class="cantainer">
+    <p>Move mouse overAd</p>
+    <img [src]= "Ad" (mouseover)="ShowAd1()"(mouseout)="ShowAd2" width="400" height="100">
+    <p>Press Hold Down mouse button to burn ON bulb</p>
+
+    <img [src]= "bulb" width="100" height="100"(mousedown)="ON()"(mouseup)="OFF()">
+
+</div>

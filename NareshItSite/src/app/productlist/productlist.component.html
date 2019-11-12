@@ -1,0 +1,22 @@
+<h2>ProductList</h2>
+<table width="400",border="1">
+    <thead>
+        <th>Products Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>ViewDetails</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of Products">
+            <td>{{product.Id}}</td>
+            <td>{{product.Name}}</td>
+            <td>{{product.Price}}</td>
+            <td>
+                <button (click)= "showDetails(products)">Details </button>
+            </td>
+
+
+
+        </tr>
+    </tbody>
+</table>

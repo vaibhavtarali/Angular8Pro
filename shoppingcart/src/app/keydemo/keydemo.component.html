@@ -1,0 +1,21 @@
+<p>keydemo works!</p>
+
+<div class="cantainer">
+    <h2>Register</h2>
+    <div class="form-group">
+        <label> User Name </label>
+
+
+    </div>
+    <input type ="text" [(ngModel)]= "txtUserName" class="form-control" (keyup) ="checkUser()">
+    <div>{{msgUserName}}</div>
+</div>
+<div class="form-group">
+    <label>Password</label>
+</div>
+<input type="text" class="form-control" [(ngModel)]="txtPassword" (keypress)="CheckPassword($event)">
+<div class="form-group">
+    <a href="javascript:void(0)"  (click)= "LinkClicked($event)" >https//:www.google.com</a>
+
+</div>
+
